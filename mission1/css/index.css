@@ -1,0 +1,11 @@
+body, ul { 
+	margin: 0;
+	padding: 0;
+}
+
+ul { list-style: none; }
+
+.container {
+	width: 980px;
+	margin: 50px auto;
+}

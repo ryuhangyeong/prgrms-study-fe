@@ -1,0 +1,65 @@
+body,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 980px;
+  margin: 50px auto;
+}
+
+.TodoList li {
+  overflow: hidden;
+}
+
+.TodoList p {
+  float: left;
+}
+
+.TodoList button {
+  float: right;
+}
+
+.TodoList p.completed {
+  text-decoration: line-through;
+}
+
+.UserList {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.Loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.Loading-inner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
